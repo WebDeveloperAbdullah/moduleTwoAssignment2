@@ -20,8 +20,6 @@ for($i=1; $i<=20; $i++){
 
 echo"while loop to print all even numbers from 1 to 20,\n";
 
-
-
 $i=0;
 while($i<20){
     $i++;
@@ -48,17 +46,18 @@ do{
 
 }while($i<20);
 
+//5. What is the output of the following PHP code?
+ 
+
 
 //The function should take the arguments like start as 1, end as 20 and step as 2. You must call the
 
 echo"The function should take the arguments like start as 1, end as 20 and step as 2. You must call the \n";
 function printNumber($start,$end,$stepping){
-        if($start <= $end){
-                return;
+        for($i=$start;$i < $end;$i+=$stepping){
+          echo $i;
+          echo PHP_EOL;
         }
-        echo $start."\n";
-        $start+=$stepping;
-        printNumber($start,$end,$stepping);
         
 }
 printNumber(1,20,2);
