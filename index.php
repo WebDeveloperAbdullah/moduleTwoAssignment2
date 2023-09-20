@@ -67,7 +67,7 @@ printNumber(1,20,2);
 echo"Task 2: Skip Multiples of 5 \n";
 
 for($i=1;$i<=50;$i+=1){
-        if($i<5){
+        if($i % 5 ==0){
         continue;
         }
         echo $i;
